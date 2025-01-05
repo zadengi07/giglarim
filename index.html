@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* Header */
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: black;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+
+
+        /* Responsive Image Container */
+        .img-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Card Styles */
+        .card-img {
+            width: 18rem;
+            background-color: #f1f1f1;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .card-img img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card-img-text {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+        @media (max-width: 700px) {
+            .img-container {
+                flex-direction: column;
+            }
+
+            .card-img {
+                width: 100%;
+            }
+        }
+
+        .custom-green {
+            background-color: #09f409;
+            /* Light Green */
+        }
+
+        /* List Group uchun maxsus style */
+        .list-group-item {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="color: black;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bosh menyu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#section1">Mening tajribam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">Web-saytlarim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" aria-disabled="true">Disabled</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://t.me/khujaboyev00" target="_blank">
+                            <span class="badge text-bg-dark">Admin</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Experience List -->
+    <div class="container mt-5" id="section1">
+        <h2>Mening tajribam</h2>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                HTML
+                <span class="badge custom-green rounded-pill">100%</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                CSS
+                <span class="badge custom-green rounded-pill">100%</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                JavaScript
+                <span class="badge custom-green rounded-pill">70%</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Node.js
+                <span class="badge custom-green rounded-pill">50%</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Image Cards Container -->
+    <div class="img-container" id="section2">
+        <div class="card-img">
+            <img src="./img/logo5.png" alt="Image 3">
+            <a href="./AI-Image-Generator/" download>
+                faylni yuklab olish
+            </a>
+
+        </div>
+        <div class="card-img">
+            <img src="./img/logo4.png" alt="Image 3">
+            <a href="./weather/" download>
+                faylni yuklab olish
+            </a>
+
+        </div>
+
+        <div class="card-img">
+            <img src="./img/logo1.jpg" alt="Image 1">
+            <p class="card-img-text"><a href="https://t.me/shehcrypto">shehcrypto</a> kanali uchun maxsus tayorlandi</p>
+        </div>
+        <div class="card-img">
+            <img src="./img/logo2.jpg" alt="Image 2">
+            <p class="card-img-text">Texno Bozor dokonlar tarmogi uchun maxsus logotip</p>
+        </div>
+        <div class="card-img">
+            <img src="./img/logo3.jpg" alt="Image 3">
+            <p class="card-img-text"><a href="https://t.me/androidvzbot">APK ilovalar</a> boti uchun maxsus tayorlandi.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+  <!-- Footer -->
+<footer class="footer bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- Footer Column 1 -->
+            <div class="col-md-4">
+                <h4>Biz bilan bog'laning</h4>
+                <ul class="list-unstyled">
+                    <li><a href="tel:+884514007" class="text-white">Telefon: +88 451 4007</a></li>
+                    <li><a href="mailto:asadbekxojaboyev0@gmail.com" class="text-white">Email: asadbekxojaboyev0@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Column 2 -->
+            <div class="col-md-4">
+                <h4>Ijtimoiy tarmoqlar</h4>
+                <ul class="list-unstyled d-flex">
+                    <li class="mx-2"><a href="https://www.facebook.com/khujaboyev00" target="_blank" class="text-white"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="mx-2"><a href="https://twitter.com/khujaboyev00" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a></li>
+                    <li class="mx-2"><a href="https://www.instagram.com/khujaboyev00" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a></li>
+                    <li class="mx-2"><a href="https://www.linkedin.com/in/khujaboyev00" target="_blank" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="mx-2"><a href="https://t.me/khujaboyev00" target="_blank" class="text-white"><i class="fab fa-telegram-plane"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Column 3 -->
+            <div class="col-md-4">
+                <h4>Biz haqimizda</h4>
+                <p>Biz mijozlarimizga eng yuqori sifatli xizmatlarni taqdim etishga harakat qilamiz. Bizning kompaniyamiz texnologiyalar va innovatsiyalar sohasida yetakchi hisoblanadi.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p>&copy; 2025. Barcha huquqlar himoyalangan. | <a href="mailto:asadbekxojaboyev0@gmail.com" class="text-white">Aloqa</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS, jQuery, FontAwesome -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

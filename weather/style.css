@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(12, 12, 12);
+}
+
+.container {
+    max-width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.search-section {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-section .input-wrapper {
+    height: 54px;
+    width: 100%;
+    position: relative;
+}
+
+.search-section .input-wrapper span {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.search-section .input-wrapper .search-input {
+    width: 100%;
+    height: 100%;
+    padding: 0px 50px;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    outline: none;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+}
+
+.search-section .input-wrapper .search-input::placeholder {
+    text-transform: none;
+}
+
+.search-section .input-wrapper .search-input:focus {
+    border: 2px solid blue;
+}
+
+.search-section .location-button {
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    background: none;
+    height: 54px;
+    width: 56px;
+    color: blue;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.search-section .location-button:hover {
+    background: blue;
+    color: whitesmoke;
+    border: 2px solid blue;
+}
+
+.search-section .location-button span {
+    font-size: 22px;
+}
+
+.weather-section .current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0px 50px;
+}
+
+.current-weather .weather-icon {
+    width: 140px;
+    aspect-ratio: 1;
+}
+
+.current-weather .temperature {
+    font-size: 3.4rem;
+    font-weight: 700;
+    display: flex;
+    gap: 3px;
+}
+
+.current-weather .temperature span {
+    font-size: 1.8rem;
+    margin: 3px 0px 0px 5px;
+    font-weight: 500;
+}
+
+.current-weather .description {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.weather-section .hourly-weather {
+    border-top: 1.5px solid dodgerblue;
+    padding: 20px 25px;
+}
+
+.hourly-weather .weather-list {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.hourly-weather .weather-list:hover {
+    scrollbar-color: #a3a3dc transparent;
+}
+
+.hourly-weather .weather-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.weather-list .weather-icon {
+    width: 28px;
+    aspect-ratio: 1;
+}
